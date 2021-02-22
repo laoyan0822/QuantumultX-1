@@ -5,17 +5,17 @@
 作者微信公众号：ios黑科技
 作者官方网站：s7aa.cn
 
-圈X:
+圈X：
 
 [rewrite_local]
 
 #酷咪视频VIP无限看
-^https:\/\/(.+)\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/kumi.js
+^https:\/\/lginstaacademy\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/) url script-response-body kumi.js
 
 酷咪下载地址
 km.app
 
-MITM = *.com
+MITM = lginstaacademy.com
 */
 
 
@@ -56,3 +56,5 @@ if (url.indexOf(p6) != -1) {
 
 } 
 $done({body});
+
+
